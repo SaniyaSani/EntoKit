@@ -45,6 +45,14 @@ yet.
 
 ## License
 
-Before presenting the project as reusable open-source software, add a license
-to the repository. A permissive license such as MIT is a common choice for a
-small toolkit, but the project owner should choose the license deliberately.
+
+EntoKit is licensed under the **PolyForm Noncommercial License 1.0.0**.
+
+You may use, study, modify and distribute the software for permitted non-commercial purposes.
+
+Commercial use, including the incorporation of EntoKit or substantial portions of its code into paid products, commercial services or other commercial projects, requires prior written permission from the copyright holder.
+
+For commercial licensing inquiries, please contact Sanny.
+
+Copyright © 2026 Sanny (SaniyaSani).
+
