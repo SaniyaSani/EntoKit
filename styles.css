@@ -358,7 +358,7 @@ h2 {
 .tools-grid {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .tool-card {
@@ -512,7 +512,7 @@ a.tool-link:hover span {
 .workflow-grid {
   display: grid;
   gap: 32px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -763,6 +763,10 @@ footer > a:last-child {
 
 .tool-card:nth-child(4) {
   animation-delay: 180ms;
+}
+
+.tool-card:nth-child(5) {
+  animation-delay: 240ms;
 }
 
 @media (max-width: 1100px) {
