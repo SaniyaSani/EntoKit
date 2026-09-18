@@ -1,20 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="EntoKit — open tools for better insect collections."
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EntoKit — small, open-source tools for insect fieldwork, identification and collections.">
+    <meta name="theme-color" content="#f4efe4">
     <title>EntoKit — Open entomology tools</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <main id="top">
       <header class="site-header">
         <a class="brand" href="#top" aria-label="EntoKit home">
-          <span class="brand-flower" aria-hidden="true">✣</span>
+          <span class="brand-mark" aria-hidden="true">✳</span>
           <span>EntoKit</span>
         </a>
         <nav aria-label="Main navigation">
@@ -23,280 +22,179 @@
           <a href="#about">About</a>
           <a href="#open-source">Open source</a>
         </nav>
+        <a class="header-source" href="https://github.com/SaniyaSani/EntoKit" target="_blank" rel="noreferrer">
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
       </header>
 
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="hand-note hero-kicker">made for real collections</p>
-          <h1 id="hero-title">Open tools for better insect collections.</h1>
-          <p class="hero-intro">
-            Free and open-source tools for field notes, data cleaning,
-            identification and labels—built by and for people who care about
-            insects.
-          </p>
-          <div class="hero-actions">
-            <a
-              class="button button-primary"
-              href="https://entolabel.streamlit.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open EntoLabel <span aria-hidden="true">→</span>
-            </a>
-            <a class="button button-secondary" href="#tools">
-              Explore the toolkit <span aria-hidden="true">↓</span>
-            </a>
+      <div id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="field-label">ENTOKIT / OPEN-SOURCE ENTOMOLOGY TOOLS</p>
+            <h1 id="hero-title">Small tools for serious insect work.</h1>
+            <p class="hero-intro">
+              From the first field note to the final specimen label: practical,
+              open tools for people who care about insects and their data.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://entolabel.streamlit.app" target="_blank" rel="noreferrer">
+                Open EntoLabel <span aria-hidden="true">↗</span>
+              </a>
+              <a class="button button-secondary" href="#tools">
+                Explore the toolkit <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+            <p class="ink-note hero-note">built around specimens, not platforms</p>
           </div>
-        </div>
 
-        <div class="field-art">
-          <img
-            src="hero-corn-beetles.png"
-            alt="Hand-drawn corn plants with two beetles among the leaves"
-          />
-          <p class="hand-note field-note field-note-left">
-            diurnal<br />on tassel<br />(v. common)
-          </p>
-          <p class="hand-note field-note field-note-right">
-            Corn field edge<br />6 June 2026<br />clouds, warm
-          </p>
-          <div class="scale-note" aria-hidden="true"><span></span>1 cm</div>
-          <div class="palette-dots" aria-hidden="true">
-            <i></i><i></i><i></i><i></i><i></i>
+          <div class="hero-art" role="img" aria-label="EntoKit fly carrying a specimen label">
+            <span class="registration-mark mark-one" aria-hidden="true"></span>
+            <span class="registration-mark mark-two" aria-hidden="true"></span>
+            <div class="specimen-slip slip-top" aria-hidden="true">
+              <span>CH · Zürich</span>
+              <span>18.IX.2026</span>
+              <span>leg. S. Sagutdinova</span>
+            </div>
+            <img src="assets/entokit-fly-label-ink.png" alt="">
+            <div class="hero-caption" aria-hidden="true">
+              <span class="caption-number">01</span>
+              <span>FIELD NOTE → CLEAN DATA → LABEL</span>
+            </div>
+            <span class="dashed-flight" aria-hidden="true"></span>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="tools-section" id="tools" aria-labelledby="tools-title">
-        <div class="section-intro">
+        <section class="tools-section" id="tools" aria-labelledby="tools-title">
+          <div class="section-heading">
+            <div>
+              <p class="field-label">THE TOOL DRAWER</p>
+              <h2 id="tools-title">Five tools. One specimen journey.</h2>
+            </div>
+            <p>
+              Start with the problem in front of you. The same familiar files
+              can carry the work from the field to the collection drawer.
+            </p>
+          </div>
+
+          <div class="tools-grid">
+            <article class="tool-card available">
+              <div class="card-topline"><span class="card-number">01</span><span class="status-badge available">Available</span></div>
+              <div class="tool-illustration"><img src="icons/entolabel.png" alt="" aria-hidden="true"></div>
+              <h3>EntoLabel</h3>
+              <p>Create clean collection and determination labels from Excel or CSV, ready to print on A4.</p>
+              <a class="tool-link" href="https://entolabel.streamlit.app" target="_blank" rel="noreferrer">
+                Open EntoLabel <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="tool-card building">
+              <div class="card-topline"><span class="card-number">02</span><span class="status-badge building">In development</span></div>
+              <div class="tool-illustration"><img src="icons/entofield.png" alt="" aria-hidden="true"></div>
+              <h3>EntoField</h3>
+              <p>Record collecting events, localities and specimens in the field—even from your phone.</p>
+              <a class="tool-link" href="https://entofield.ssagutdinova.workers.dev/" target="_blank" rel="noreferrer">
+                Try EntoField <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="tool-card building">
+              <div class="card-topline"><span class="card-number">03</span><span class="status-badge building">In development</span></div>
+              <div class="tool-illustration"><img src="icons/entodata-doctor.png" alt="" aria-hidden="true"></div>
+              <h3>EntoData Doctor</h3>
+              <p>Find missing values, inconsistent formats and coordinates that need attention.</p>
+              <a class="tool-link" href="https://saniyasani.github.io/entodata-doctor/" target="_blank" rel="noreferrer">
+                Try EntoData Doctor <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="tool-card building">
+              <div class="card-topline"><span class="card-number">04</span><span class="status-badge building">In development</span></div>
+              <div class="tool-illustration"><img src="icons/entobox.png" alt="" aria-hidden="true"></div>
+              <h3>EntoBox</h3>
+              <p>Organize specimen boxes visually, track storage locations and find specimens across your collection.</p>
+              <a class="tool-link" href="https://saniyasani.github.io/EntoBox/" target="_blank" rel="noreferrer">
+                Try EntoBox <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="tool-card planned">
+              <div class="card-topline"><span class="card-number">05</span><span class="status-badge planned">Planned</span></div>
+              <div class="tool-illustration"><img src="icons/entodet.png" alt="" aria-hidden="true"></div>
+              <h3>EntoDet</h3>
+              <p>Document identifications, evidence and determination history without losing context.</p>
+              <span class="tool-link muted">On the roadmap <span aria-hidden="true">—</span></span>
+            </article>
+          </div>
+
+          <p class="beta-note">
+            EntoField, EntoData Doctor and EntoBox are working prototypes. Real
+            specimens and honest feedback are very welcome.
+          </p>
+        </section>
+
+        <section class="workflow-section" id="workflow" aria-labelledby="workflow-title">
+          <div class="workflow-heading">
+            <p class="field-label">ONE DATASET / FIVE STOPS</p>
+            <h2 id="workflow-title">From muddy notebook to tidy drawer.</h2>
+          </div>
+          <ol class="workflow-grid">
+            <li><span class="workflow-mark">01</span><div><h3>Field notes</h3><p>Collecting events, context, GPS and photographs.</p></div></li>
+            <li><span class="workflow-mark">02</span><div><h3>Clean data</h3><p>Check formats and make every record reusable.</p></div></li>
+            <li><span class="workflow-mark">03</span><div><h3>Identification</h3><p>Keep names, evidence and determinations connected.</p></div></li>
+            <li><span class="workflow-mark">04</span><div><h3>Label</h3><p>Turn structured data into accurate physical labels.</p></div></li>
+            <li><span class="workflow-mark">05</span><div><h3>Collection</h3><p>Keep specimens findable in boxes and storage.</p></div></li>
+          </ol>
+          <div class="workflow-line" aria-hidden="true"></div>
+          <p class="ink-note workflow-note">capture once · stop retyping</p>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+          <div class="about-art" aria-hidden="true">
+            <div class="pin-label"><span>ENTOKIT / SPECIMEN 021</span><span>collection data belong to the collection</span></div>
+            <img src="pinned-beetle.png" alt="">
+            <span class="about-circle"></span>
+            <span class="about-cross cross-one"></span>
+            <span class="about-cross cross-two"></span>
+          </div>
+          <div class="about-copy">
+            <p class="field-label">SMALL BY DESIGN</p>
+            <h2 id="about-title">Useful tools should feel human.</h2>
+            <p>
+              EntoKit is a growing collection of focused tools for field
+              entomologists, students, private collectors and small scientific
+              collections. Familiar files stay at the centre, so your data
+              remains understandable, portable and yours.
+            </p>
+            <div class="principles">
+              <div><strong>Open</strong><span>Free to use, study and improve.</span></div>
+              <div><strong>Focused</strong><span>One concrete collection problem at a time.</span></div>
+              <div><strong>Connected</strong><span>Excel and CSV remain the bridge between tools.</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="open-source-section" id="open-source">
+          <div class="open-source-stamp" aria-hidden="true"><span>OPEN</span><span>SOURCE</span></div>
           <div>
-            <p class="hand-note">choose what you need today</p>
-            <h2 id="tools-title">Five small tools. One specimen journey.</h2>
+            <p class="field-label">USE IT / TEST IT / HELP IT GROW</p>
+            <h2>Built in the open, shaped by real collections.</h2>
           </div>
-          <p>
-            Start with one tool or let the same familiar spreadsheet carry your
-            work from the field to the collection drawer.
-          </p>
-        </div>
-
-        <div class="tools-grid">
-          <article class="tool-card available">
-            <span class="status-badge available">Available</span>
-            <div class="tool-illustration">
-              <img src="icons/entolabel.png" alt="" aria-hidden="true" />
-            </div>
-            <h3>EntoLabel</h3>
+          <div class="open-source-copy">
             <p>
-              Create clean collection and determination labels from Excel or
-              CSV, ready to print on A4.
+              EntoKit is created and maintained by <strong>Sanny</strong>. It is
+              still young, so you are warmly invited to try the tools with real
+              specimen data, report the awkward bits and help shape what comes next.
             </p>
-            <a
-              class="tool-link"
-              href="https://entolabel.streamlit.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open EntoLabel <span aria-hidden="true">↗</span>
+            <a class="source-button" href="https://github.com/SaniyaSani/EntoKit" target="_blank" rel="noreferrer">
+              View source on GitHub <span aria-hidden="true">↗</span>
             </a>
-          </article>
-
-          <article class="tool-card building">
-            <span class="status-badge building">In development</span>
-            <div class="tool-illustration">
-              <img src="icons/entofield.png" alt="" aria-hidden="true" />
-            </div>
-            <h3>EntoField</h3>
-            <p>
-              Record collecting events, localities and specimens in the
-              field—even from your phone.
-            </p>
-            <a
-              class="tool-link"
-              href="https://entofield.ssagutdinova.workers.dev/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Try EntoField <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article class="tool-card building">
-            <span class="status-badge building">In development</span>
-            <div class="tool-illustration">
-              <img src="icons/entodata-doctor.png" alt="" aria-hidden="true" />
-            </div>
-            <h3>EntoData Doctor</h3>
-            <p>
-              Find missing values, inconsistent formats and coordinates that
-              need attention.
-            </p>
-            <a
-              class="tool-link"
-              href="https://saniyasani.github.io/entodata-doctor/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Try EntoData Doctor <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article class="tool-card building">
-            <span class="status-badge building">In development</span>
-            <div class="tool-illustration">
-              <img src="icons/entobox.png" alt="" aria-hidden="true" />
-            </div>
-            <h3>EntoBox</h3>
-            <p>
-              Organize specimen boxes visually, track storage locations and
-              find specimens across your collection.
-            </p>
-            <a
-              class="tool-link"
-              href="https://saniyasani.github.io/EntoBox/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Try EntoBox <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article class="tool-card planned">
-            <span class="status-badge planned">Planned</span>
-            <div class="tool-illustration">
-              <img src="icons/entodet.png" alt="" aria-hidden="true" />
-            </div>
-            <h3>EntoDet</h3>
-            <p>
-              Document identifications, evidence and determination history
-              without losing context.
-            </p>
-            <span class="tool-link muted">
-              On the roadmap <span aria-hidden="true">—</span>
-            </span>
-          </article>
-        </div>
-        <p class="beta-note">
-          EntoField, EntoData Doctor and EntoBox are working prototypes. You
-          are welcome to try them while they are still growing.
-        </p>
-      </section>
-
-      <section
-        class="workflow-section"
-        id="workflow"
-        aria-labelledby="workflow-title"
-      >
-        <div class="brush-edge" aria-hidden="true"></div>
-        <p class="hand-note workflow-kicker">
-          from field note to collection record
-        </p>
-        <h2 id="workflow-title">One connected workflow</h2>
-        <ol class="workflow-grid">
-          <li>
-            <span class="workflow-mark">01</span>
-            <div>
-              <h3>Field notes</h3>
-              <p>Observations, collecting events, photos and context.</p>
-            </div>
-            <span class="workflow-arrow" aria-hidden="true">→</span>
-          </li>
-          <li>
-            <span class="workflow-mark">02</span>
-            <div>
-              <h3>Clean data</h3>
-              <p>Structure and standards make your records reusable.</p>
-            </div>
-            <span class="workflow-arrow" aria-hidden="true">→</span>
-          </li>
-          <li>
-            <span class="workflow-mark">03</span>
-            <div>
-              <h3>Identification</h3>
-              <p>Names, evidence and determinations stay connected.</p>
-            </div>
-            <span class="workflow-arrow" aria-hidden="true">→</span>
-          </li>
-          <li>
-            <span class="workflow-mark">04</span>
-            <div>
-              <h3>Label</h3>
-              <p>Accurate labels turn data into collection records.</p>
-            </div>
-            <span class="workflow-arrow" aria-hidden="true">→</span>
-          </li>
-          <li>
-            <span class="workflow-mark">05</span>
-            <div>
-              <h3>Collection</h3>
-              <p>Keep specimens findable in boxes and storage.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="about-section" id="about">
-        <div class="about-art" aria-hidden="true">
-          <span class="pink-stroke"></span>
-          <span class="green-stroke"></span>
-          <span class="blue-stroke"></span>
-          <span class="little-beetle">✣</span>
-        </div>
-        <div class="about-copy">
-          <p class="hand-note">built around specimens, not platforms</p>
-          <h2>Useful tools can feel human.</h2>
-          <p>
-            EntoKit is a growing collection of focused tools for field
-            entomologists, students, private collectors and small scientific
-            collections. It keeps familiar files at the centre, so your data
-            remains understandable, portable and yours.
-          </p>
-          <div class="principles">
-            <div>
-              <strong>Open</strong>
-              <span>Free to use, study and improve.</span>
-            </div>
-            <div>
-              <strong>Focused</strong>
-              <span>One concrete collection problem at a time.</span>
-            </div>
-            <div>
-              <strong>Connected</strong>
-              <span>Excel and CSV remain the bridge between tools.</span>
-            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="open-source-section" id="open-source">
-        <div>
-          <p class="hand-note">use it · test it · help it grow</p>
-          <h2>Open tools grow through honest feedback.</h2>
-        </div>
-        <div>
-  <p>
-    EntoKit is an open-source toolkit created and maintained by
-    <strong>Sanny</strong>. It is still young, so you are warmly invited
-    to try the tools with real specimen data, share feedback and help
-    shape what comes next.
-  </p>
-
-  <a
-    class="source-button"
-    href="https://github.com/SaniyaSani/EntoKit"
-    target="_blank"
-    rel="noreferrer"
-  >
-    View source on GitHub <span aria-hidden="true">↗</span>
-  </a>
-</div>
-      </section>
+        </section>
+      </div>
 
       <footer>
-        <a class="brand footer-brand" href="#top">
-          <span class="brand-flower" aria-hidden="true">✣</span>
-          <span>EntoKit</span>
-        </a>
-       <p>Open-source entomology tools · Created by Sanny</p>
+        <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">✳</span><span>EntoKit</span></a>
+        <p>Open-source entomology tools · Created by Sanny</p>
         <a href="#top">Back to top ↑</a>
       </footer>
     </main>
