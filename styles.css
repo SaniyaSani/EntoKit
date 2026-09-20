@@ -75,13 +75,31 @@ h1, h2, h3 { font-family: var(--font-display); }
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 7px;
   width: fit-content;
 }
 
-.brand-logo {
-  display: block;
-  width: 156px;
-  height: auto;
+.brand-insect {
+  display: grid;
+  width: 45px;
+  height: 35px;
+  place-items: center;
+  overflow: hidden;
+  transform: rotate(-4deg);
+}
+.brand-insect img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.2);
+  mix-blend-mode: multiply;
+}
+.brand-word {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -.055em;
+  line-height: 1;
 }
 
 nav {
@@ -621,7 +639,9 @@ a.tool-link:hover span { transform: translate(3px, -3px); }
 .source-button:hover { box-shadow: 2px 2px 0 var(--ink); transform: translate(3px, 3px); }
 
 footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 34px max(4.5vw, 34px); background: var(--paper); }
-.footer-brand .brand-logo { width: 112px; }
+.footer-brand .brand-insect { width: 38px; height: 30px; }
+.footer-brand .brand-insect img { width: 50px; height: 50px; }
+.footer-brand .brand-word { font-size: 1.35rem; }
 footer p { margin-bottom: 0; color: var(--ink-soft); font-family: var(--font-field); font-size: .68rem; }
 footer > a:last-child { justify-self: end; font-family: var(--font-field); font-size: .7rem; font-weight: 700; text-transform: uppercase; }
 
@@ -665,7 +685,9 @@ footer > a:last-child { justify-self: end; font-family: var(--font-field); font-
 
 @media (max-width: 680px) {
   .site-header { min-height: 70px; padding: 0 18px; }
-  .brand-logo { width: 128px; }
+  .brand-insect { width: 39px; height: 31px; }
+  .brand-insect img { width: 51px; height: 51px; }
+  .brand-word { font-size: 1.45rem; }
   .header-source { padding: 8px 10px; font-size: .65rem; }
   .hero-copy { padding: 54px 20px 58px; }
   h1 { font-size: clamp(3.45rem, 17vw, 5.1rem); }
