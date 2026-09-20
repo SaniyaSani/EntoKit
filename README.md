@@ -8,6 +8,8 @@ Node.js, a database, or a paid server.
 
 - `index.html` — the website content and links
 - `styles.css` — colours, layout, animations and mobile styling
+- `assets/` — the EntoKit wordmark and hero illustration
+- `icons/` — the illustrated tool cards
 - `pinned-beetle.png` — the specimen illustration
 - `.nojekyll` — tells GitHub Pages to serve the files directly
 
@@ -18,8 +20,8 @@ Node.js, a database, or a paid server.
 3. Name the repository `EntoKit`.
 4. Select **Public** and create the repository.
 5. In the empty repository choose **Add file → Upload files**.
-6. Upload the *contents* of this folder: `index.html`, `styles.css`,
-   `pinned-beetle.png`, `.nojekyll`, and `README.md`.
+6. Upload the *contents* of this folder, including the `assets` and `icons`
+   folders. Do not upload the enclosing folder itself.
 7. At the bottom of the page click **Commit changes**.
 8. Open **Settings → Pages**.
 9. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
@@ -27,15 +29,6 @@ Node.js, a database, or a paid server.
 
 GitHub will show the website address in the Pages settings when publishing is
 complete.
-
-## Replace the GitHub button
-
-Open `index.html`, search for:
-
-`https://github.com/YOUR-GITHUB-USERNAME/EntoKit`
-
-Replace `YOUR-GITHUB-USERNAME` with your actual GitHub username, then commit the
-change.
 
 ## Update tool links later
 
@@ -55,4 +48,3 @@ Commercial use, including the incorporation of EntoKit or substantial portions o
 For commercial licensing inquiries, please contact Sanny.
 
 Copyright © 2026 Sanny (SaniyaSani).
-
