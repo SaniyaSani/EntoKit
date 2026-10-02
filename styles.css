@@ -425,11 +425,15 @@ h2 {
   overflow: hidden;
 }
 .tool-illustration img {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 1;
+  display: block;
   width: 100%;
   height: 100%;
+  margin: auto;
   object-fit: contain;
+  object-position: center;
   filter: contrast(1.04);
   mix-blend-mode: multiply;
 }
@@ -687,7 +691,7 @@ footer > a:last-child { justify-self: end; font-family: var(--font-field); font-
   .poster-number { font-size: 2.8rem; }
   .poster-title { top: 16%; left: 12%; font-size: 1.45rem; }
   .poster-stage { inset: 14% 4% 13%; }
-  .poster-stage > img { right: -16%; bottom: 18%; width: 110vw; }
+  .poster-stage > img { right: 0; bottom: 18%; width: 100%; }
   .slip-top { top: 17%; right: 4%; min-width: 160px; padding: 10px 12px; font-size: .54rem; }
   .token-gps { top: 37%; left: 8%; }
   .token-csv { top: 47%; right: 8%; }
@@ -700,6 +704,12 @@ footer > a:last-child { justify-self: end; font-family: var(--font-field); font-
   .tools-grid { grid-template-columns: 1fr; }
   .tool-card, .tool-card:nth-child(4), .tool-card:nth-child(5) { grid-column: auto; min-height: 450px; transform: none; }
   .tool-card:nth-child(even):hover, .tool-card:hover { transform: translate(3px, 3px) rotate(-.25deg); }
+  .tool-illustration img { mix-blend-mode: normal; }
+  .tool-card:nth-child(1) .tool-illustration img,
+  .tool-card:nth-child(5) .tool-illustration img { transform: scale(1.55); }
+  .tool-card:nth-child(2) .tool-illustration img,
+  .tool-card:nth-child(4) .tool-illustration img { transform: scale(1.05); }
+  .tool-card:nth-child(3) .tool-illustration img { transform: scale(1.15); }
   .beta-note { text-align: left; }
   .workflow-grid { grid-template-columns: 1fr; }
   .workflow-grid li { min-height: auto; }
